@@ -9,4 +9,8 @@ void foo()
 void stable()
 {
 	printf("stable foo\n");
+
+void myexp()
+{
+	printf("some exp...\n");
 }

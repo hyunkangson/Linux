@@ -3,5 +3,7 @@
 
 void foo();
 void stable();
+void myexp();
+
 
 #endif
