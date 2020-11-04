@@ -6,3 +6,7 @@ void foo()
 	printf("hello foo\n");
 }
 
+void myexp()
+{
+	printf("some exp...\n");	
+}
