@@ -6,3 +6,7 @@ void foo()
 	printf("hello foo\n");
 }
 
+void stable()
+{
+	printf("stable foo\n");
+}
