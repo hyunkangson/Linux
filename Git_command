@@ -1,0 +1,47 @@
+git config --global user.name " user_name" // git 사용자 이름 설정
+ 
+git config --global user.email "user_email" // git 사용자 이메일 설정
+ 
+git config --list // git 설정 정보
+ 
+git init // 현재 디렉토리를 home 디렉토리로 초기화
+ 
+git status // git 상태 확인, untrackerd_file들이 나온다.
+ 
+git add . // 현재 디렉토리 하위 모두 staging영역에 추가
+ 
+git add file_name // 해당 파일 staging영역에 추가
+ 
+git commit -m 'description' // commit을 하고 메시지를 기록
+ 
+git log // commit의 단계를 보여준다.(unique한 해쉬코드로된 commit의 버전 번호도 나온다.)
+ 
+.gitignore // gitignore파일에 기록된 파일은 git에 추가되지 않는다.  ex) *.o (모든 오브젝트 파일), bin/, build/(디렉토리들)
+ 
+git checkout commit_ver // 돌아가고 싶은 commit에 해당하는 번호로 돌아가며 전부 작성하지 않고 구별이 가능한 정도만 입력
+ 
+git checkout master // 작업하고 있는 branch의 main으로 돌아간다.
+ 
+git branch // 입력시 현재 branch를 보여줌, master를 둔 채로 다른 방향으로 수정하고 싶을 때 새로운 곁가지를 만들어 사용
+ 
+git branch branch_name // 새로운 branch 생성
+ 
+git checkout branch_name // 해당 이름의 branch로 이동
+ 
+git log --graph branch_name branch_name // 원하는 branch의 log를 graph로 표시해준다.
+ 
+git log --graph --oneline branch_name branch_name // graph를 간략하게 보여준다.
+ 
+git merge branch_name // 현재 branch에 해당 branch를 붙인다.
+ 
+git branch -D branch_name // branch 삭제
+ 
+git remote add origin htpps://github.com/repository_name // 원격 저장소 주소를 origin으로 등록
+ 
+git remote -v // 등록된 원격 저장소 표시
+ 
+git branch -M main // default branch 이름이 master였던 것을 main으로 변경
+ 
+git push -u origin main // origin이름을 지닌 remote를 git에 push
+ 
+git pull origin main // repository에서 수정한 사항을 main으로 가져온다. Fast-forward에 수정 사항에 대해 표시
